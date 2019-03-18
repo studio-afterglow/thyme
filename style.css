@@ -300,7 +300,7 @@ hr{
 
 /*------------------------------*/
 
-@media (min-width: 768px){
+@media (min-width: 700px){
     ul ul{
     visibility: hidden;
     display: block;
@@ -312,7 +312,7 @@ ul li:hover ul{
     opacity: 1;
 }
 }
-@media (max-width: 768px){
+@media (max-width: 700px){
     nav div{
         display: block;
     }
