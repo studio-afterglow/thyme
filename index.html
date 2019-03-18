@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang=”pl”>
+<head>
+<title>Thyme</title>
+
+<meta charset="UTF-8">
+
+
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    
+    <!-- STYLE & FONTS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1><a href="#">Thyme</a></h1>
+            <nav>
+            <div class="trigger">
+            <div id="nav_button" onclick="onClickMenu()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+			</div>
+            </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a>
+                <ul>
+                <li><a href="#">Drop 1</a></li>
+                <li><a href="#">Drop 2</a></li>
+                <li><a href="#">Drop 3</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
+        </header>
+    </div>
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="content">
+                        <div class="entry_div">
+                            <h3>20 czerwca 2017</h3>
+                            <h1><a href="#">Tytuł wpisu</a></h1>
+                            <img src="NKN_1022.jpg" class="entry_image" alt="Image" />
+                            <p>Aliquam vitae rutrum dui, mollis molestie lectus. Donec sodales, justo in vehicula ultricies, leo odio aliquet nisl, in aliquet nisl erat sed mi. Proin vel velit tempor, interdum ante condimentum, sodales nulla. In mattis ipsum fermentum, egestas libero et, aliquet massa. Phasellus semper, turpis id semper sodales, dui nunc semper diam, vitae volutpat dolor felis eu eros. Vivamus sollicitudin ultricies leo eget malesuada. Phasellus sit amet erat at erat mattis bibendum nec nec nisi. Donec tempus consequat ex, eleifend finibus dui scelerisque sed.</p>
+                            <h2><a href="#">Czytaj dalej...</a></h2>
+                            <hr>
+                        </div>
+                        <div class="entry_div">
+                            <h3>20 czerwca 2017</h3>
+                            <h1><a href="#">Et cillum dolor velit cernantur, eu esse deserunt</a></h1>
+                            <img src="thyme-bg.png" class="entry_image" alt="Image" />
+                            <p>W takim Litwinka tylko się i płynnie mówił, i Sędziem przyszła nagle z Rejentem wzmogła się jak wiadomo, krzepcy, otyli i nas hordą gorszą od Rejenta, szczuplejszy i bawi się pomieszany, zły i żywot Katona. Dalej w powiecie. Lubił bardzo szybko, suwała się i jeszcze dobrze na nowo pytania. Cóż złego, że po ojcu Podkomorzy i że się jak w głównym sądzie w końcu stoła bo tak Suwarów w żałobie. Sam Woźny pas słucki, pas ten tylko cichy smutek panów dworu gazetę im hojnie dano jako w dłonie jak naoczne świadki. </p>
+                            <h2><a href="#">Czytaj dalej...</a></h2>
+                            <hr>
+                        </div>
+                        <div class="entry_div">
+                            <h3>20 czerwca 2017</h3>
+                            <h1><a href="#">Tytuł wpisu</a></h1>
+                            <img src="thyme-bg.png" class="entry_image" alt="Image" />
+                            <p>Aliquam vitae rutrum dui, mollis molestie lectus. Donec sodales, justo in vehicula ultricies, leo odio aliquet nisl, in aliquet nisl erat sed mi. Proin vel velit tempor, interdum ante condimentum, sodales nulla. In mattis ipsum fermentum, egestas libero et, aliquet massa. Phasellus semper, turpis id semper sodales, dui nunc semper diam, vitae volutpat dolor felis eu eros. Vivamus sollicitudin ultricies leo eget malesuada. Phasellus sit amet erat at erat mattis bibendum nec nec nisi. Donec tempus consequat ex, eleifend finibus dui scelerisque sed.</p>
+                            <h2><a href="#">Czytaj dalej...</a></h2>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="sidebar">
+                    <h1>O mnie</h1>
+                    <img src="thyme-bg.png" alt="Image" />
+                    <p>Ut quis sed labore. Et cillum dolor velit cernantur, eu esse deserunt. Concursionibus ex probant ne esse mandaremus laboris. Te a cillum mentitum. 
+                    Velit voluptate ex quibusdam si est quorum distinguantur. Possumus veniam sunt 
+                    litteris quem. Sed summis iudicem aliquip ne non tamen consectetur an irure se.</p>
+                </div>
+                </div>
+            </div>
+    </div>
+        <footer>
+            <div class="site-footer">
+                <p>
+	All rights reserved</p>
+            </div>
+    </footer>
+    <script type="text/javascript">
+            $(".trigger").click(function(){
+                $("ul").slideToggle("slow");
+                $("ul ul").css("display","none");
+            });
+            $("ul li").click(function(){
+                $("ul ul").slideUp("slow");
+                $(this).find('ul').slideToggle();
+            })
+            function onClickMenu(){
+            document.getElementById("nav_button").classList.toggle("change");
+            }
+        </script>
+</body>
+</html>
